@@ -20,7 +20,7 @@ export default function about() {
       <p className={styles.hello}>hi my brother</p>
       {data.map( item =>{
           return(
-              <p>{item.user}</p>
+              <p key={item.id}>{item.user}</p>
           )
       })}
     </div>
